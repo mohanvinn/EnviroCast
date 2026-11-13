@@ -1,9 +1,10 @@
 streamlit
-folium
-streamlit-folium
 pandas
 numpy
 scikit-learn
+statsmodels
+folium
+streamlit-folium
 matplotlib
 plotly
 requests

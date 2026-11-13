@@ -10,8 +10,10 @@ from random import randint
 try:
     from model import train_model, predict_aqi, forecast_future_aqi
     from utils import get_aqi
-except ImportError:
-    st.error("Could not import model or utils. Please ensure 'model.py' and 'utils.py' are present.")
+
+except ImportError as e:
+    st.error(f"Import Error: {e}")
+    st.exception(e)
     st.stop()
 
 # --- 0. PAGE CONFIG ---
